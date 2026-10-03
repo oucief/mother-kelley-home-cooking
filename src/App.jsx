@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import TopAnnouncement from './components/TopAnnouncement';
-import PitchBanner from './components/PitchBanner';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import DailySpecials from './components/DailySpecials';
@@ -36,9 +35,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-stone-900 selection:bg-amber-200 selection:text-amber-950 font-sans">
-      {/* Top Banner with Client Pitch Highlights */}
-      <PitchBanner />
-
       {/* Real-time Business Hours & Status Bar */}
       <TopAnnouncement status={status} />
 
